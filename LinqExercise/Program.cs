@@ -23,28 +23,28 @@ namespace LinqExercise
 
             //TODO: Print the Sum of numbers
 
-            //Console.WriteLine(numbers.Sum());
-            //Console.WriteLine();
-            //Console.ReadLine();
-            ////TODO: Print the Average of numbers
+            Console.WriteLine(numbers.Sum());
+            Console.WriteLine();
+            Console.ReadLine();
+            //TODO: Print the Average of numbers
 
-            //Console.WriteLine(numbers.Average());
-            //Console.WriteLine();
-            //Console.ReadLine();
+            Console.WriteLine(numbers.Average());
+            Console.WriteLine();
+            Console.ReadLine();
 
             //TODO: Order numbers in ascending order and print to the console
-            //var ascending = numbers.OrderBy(a => a);
+            var ascending = numbers.OrderBy(a => a);
 
-            //foreach (var numbers in ascending)
-            //{
-            //    Console.WriteLine(numbers);
-            //}
-            //Console.WriteLine();
-            //Console.ReadLine();
+            foreach (var numbers in ascending)
+            {
+                Console.WriteLine(numbers);
+            }
+            Console.WriteLine();
+            Console.ReadLine();
 
-        //TODO: Order numbers in decsending order and print to the console
+            //TODO: Order numbers in decsending order and print to the console
 
-        var descending = numbers.OrderByDescending(a => a);
+            var descending = numbers.OrderByDescending(a => a);
 
             foreach (var number in descending) 
             {
@@ -61,13 +61,13 @@ namespace LinqExercise
 
             //TODO: Order numbers in any order (acsending or desc) but only print 4 of them **foreach loop only!**
 
-            //var fourNums = numbers.OrderBy(d => d).Take(4);
-            //foreach (var number in fourNums)
-            //{
-            //    Console.WriteLine(number);
-            //}
-            //Console.WriteLine();
-            //Console.ReadLine();
+            var fourNums = numbers.OrderBy(d => d).Take(4);
+            foreach (var number in fourNums)
+            {
+                Console.WriteLine(number);
+            }
+            Console.WriteLine();
+            Console.ReadLine();
 
             //TODO: Change the value at index 4 to your age, then print the numbers in decsending order
 
